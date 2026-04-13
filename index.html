@@ -1,17 +1,187 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tags Obsoletas no HTML</title>
-    </head>
-    <body>
-        <h1>Tags Obsoletas no HTML</h1>
-        <hr>
-        <h2>O que é HTML?</h2>
-        <p> O HTML(HyperTexy Markup Language) é uma linguagem de marcação utilizada para criar e estruturar páginas na web.
-            Com ele, é possível organizar textos, imagens, links e diversos outros elementos que compõem um site.
-        </p>
-        <p>Ao longo do tempo, o HTML passou por diversas evoluções </p>
-    </body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tags Obsoletas no HTML</title>
+</head>
+
+<body>
+    <h1>Tags Obsoletas no HTML</h1>
+    <hr />
+
+    <h3>Índice</h3>
+    <ul>
+        <li><a href="#html">O que é HTML?</a></li>
+        <li><a href="#evolucao">Evolução</a></li>
+        <li><a href="#porquetagsficaramobsoletas">Por que algumas tags ficaram obsoletas?</a></li>
+        <li><a href="#oquesaotagsobsoletas">O que são tags obsoletas?</a></li>
+        <li><a href="#exemplosdetagsobsoletas">Exemplos de tags obsoletas (ESSENCIAL)</a></li>
+        <li><a href="#comparacao">Comparação (Antes vs Hoje)</a></li>
+        <li><a href="#conclusao">Conclusão</a></li>
+    </ul>
+
+    <h2 id="html">O que é HTML?</h2>
+    <p>
+        HTML (HyperText Markup Language, ou Linguagem de Marcação de Hipertexto)
+        é a linguagem base de toda a internet.
+    </p>
+    <p>
+        Ele não é uma linguagem de programação, mas sim uma linguagem de marcação
+        usada para estruturar e dar significado ao conteúdo de uma página web
+        (como definir o que é um título, um parágrafo, uma imagem ou um link).
+    </p>
+
+    <h2 id="evolucao">Evolução (HTML4 → HTML5)</h2>
+    <p>A web mudou muito desde os seus primórdios.</p>
+    <p>
+        O HTML4, lançado no final dos anos 90, era focado em colocar o conteúdo na
+        tela a qualquer custo.
+    </p>
+    <p>
+        Naquela época, os desenvolvedores usavam o próprio HTML para tentar deixar
+        a página bonita.
+    </p>
+    <p>O HTML5, que se tornou o padrão moderno, mudou esse jogo.</p>
+    <p>
+        Ele introduziu a semântica (tags que explicam o que o conteúdo é, e não
+        como ele se parece) e trouxe suporte nativo para áudio, vídeo e gráficos
+        avançados, limpando muito o código.
+    </p>
+
+    <h2 id="porquetagsficaramobsoletas">
+        Por que algumas tags ficaram obsoletas?
+    </h2>
+    <p>
+        Com a evolução para o HTML5, a comunidade de desenvolvimento web percebeu
+        que misturar a estrutura da página com o seu design era uma péssima ideia.
+    </p>
+    <p>
+        Isso deixava os sites pesados, difíceis de atualizar e inacessíveis para
+        leitores de tela.
+    </p>
+    <p>
+        Assim, as tags que serviam apenas para "enfeitar" a página foram declaradas
+        obsoletas (descontinuadas).
+    </p>
+
+    <h2 id="oquesaotagsobsoletas">O que são tags obsoletas?</h2>
+    <h3>Definição simples</h3>
+    <p>
+        Tags obsoletas são elementos do código HTML que não são mais recomendados
+        para uso na criação de sites modernos.
+    </p>
+    <p>
+        Embora os navegadores atuais (como Chrome, Edge ou Safari) ainda consigam
+        "ler" e exibir essas tags para que sites muito antigos não quebrem, você
+        nunca deve usá-las em um projeto novo.
+    </p>
+
+    <h3>O Problema: misturavam estrutura com estilo</h3>
+    <p>
+        O grande erro das tags obsoletas é que elas ditavam a aparência visual
+        diretamente no código estrutural.
+    </p>
+    <p>
+        Se você quisesse mudar a cor de todos os títulos de um site com 100 páginas,
+        teria que abrir arquivo por arquivo e mudar a tag de cor um por um.
+    </p>
+
+    <h3>Hoje usamos CSS</h3>
+    <p>
+        Hoje, a regra de ouro do desenvolvimento web é a separação de
+        responsabilidades. O HTML cuida apenas da estrutura, e o CSS (Cascading
+        Style Sheets) cuida de 100% da aparência (cores, tamanhos, posicionamento).
+    </p>
+
+    <h2 id="exemplosdetagsobsoletas">
+        Exemplos de tags obsoletas (ESSENCIAL)
+    </h2>
+    <p>Aqui estão alguns dos exemplos mais clássicos de tags que você deve evitar:</p>
+
+    <ul>
+        <li>
+            FONT: Era usada para definir a cor, o tamanho e o tipo de fonte do texto.
+            <p>
+                Por que morreu: Puramente visual. Hoje, usamos as propriedades color,
+                font-size e font-family no CSS.
+            </p>
+        </li>
+
+        <li>
+            CENTER: Servia para centralizar qualquer conteúdo (textos, imagens,
+            tabelas) no meio da tela.
+            <p>
+                Por que morreu: O alinhamento é responsabilidade do design. Hoje,
+                usamos text-align: center ou tecnologias de layout como Flexbox e Grid
+                no CSS.
+            </p>
+        </li>
+
+        <li>
+            U (Underline): Originalmente usada apenas para sublinhar textos visando
+            destaque.
+            <p>
+                Contexto atual: Ela é considerada parcialmente obsoleta em seu uso
+                antigo. No HTML5, ela foi "ressuscitada" com um significado muito
+                específico.
+            </p>
+        </li>
+
+        <li>
+            STRIKE: Usada para criar aquele texto com um risco no meio (tachado).
+            <p>
+                Por que morreu: Foi substituída por tags com significado real, como
+                DEL ou S.
+            </p>
+        </li>
+
+        <li>
+            BIG e SMALL: Usadas para alterar o tamanho da fonte.
+            <p>
+                Contexto atual: O controle visual foi passado para o CSS. SMALL hoje é
+                usada para “letras miúdas”.
+            </p>
+        </li>
+    </ul>
+
+    <h2 id="comparacao">Comparação (Antes vs Hoje)</h2>
+    <p>
+        Para entender a diferença na prática, veja como fazíamos no passado e como
+        é o padrão profissional atual:
+    </p>
+
+    <h3>ANTES (HTML Antigo - Errado hoje):</h3>
+    <img src="img/antes.png" alt="Imagem do antes no HTML" />
+    <p>
+        <i>
+            O código acima é bagunçado e o HTML está tentando fazer o papel do
+            designer.
+        </i>
+    </p>
+
+    <h3>HOJE (HTML5 + CSS - O jeito certo):</h3>
+    <p>No arquivo HTML (apenas a estrutura e significado):</p>
+    <img src="img/depoishtml.png" alt="Imagem do depois no HTML" />
+
+    <p>No arquivo CSS (apenas o visual):</p>
+    <img src="img/depoiscss.png" alt="Imagem do depois no CSS" />
+
+    <h2 id="conclusao">Conclusão</h2>
+    <p>
+        A evolução do HTML não aconteceu apenas para criar novas ferramentas, mas
+        principalmente para organizar a forma como construímos a web.
+    </p>
+    <p>
+        A importância de usar HTML semântico vai muito além de um código bonito.
+        Usar as tags corretas (como header, article, strong, nav) ajuda no SEO e
+        na acessibilidade.
+    </p>
+    <p>
+        Lembre-se sempre do princípio fundamental da web moderna: separação de
+        conceitos. O HTML estrutura e o CSS estiliza.
+    </p>
+</body>
+
 </html>
