@@ -17,4 +17,4 @@ Praticar estruturação de páginas e uso de HTML semântico.
 
 ---
 
-Feito por Daysiane Cunha 💻✨
+Desenvolvido por Daysiane Cunha 💻✨
